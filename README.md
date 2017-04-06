@@ -4,6 +4,8 @@ CostaScanner is an application to detect changes in your desired Network Ranges,
 
 Currently 'changes' means that a new server is up. When this server is up, you can run scanners, e.g., Nmap, and send the result directly to your e-mail or to any URL you want (webhook).
 
+CodeScanner aims to be a no-brainer tool to plug into any data center, start monitoring it and take action when necessary.
+
 ### Getting Started
 
 - Please [install Docker](https://docs.docker.com/engine/installation/)
@@ -30,6 +32,11 @@ Currently 'changes' means that a new server is up. When this server is up, you c
 [2017-04-06 22:52:59 +0000] [Nmap] Ended Scanning: 192.168.0.1
 [2017-04-06 22:52:59 +0000] [Nmap] Begin Scanning: 192.168.0.4...
 ```
+
+### To add more scanners
+- Install the scanner by updating the `Dockerfile`
+- Update `docker.env` to register a new custom operation (see StartPing)
+- Voilá!
 
 ### Development
 ```sh
