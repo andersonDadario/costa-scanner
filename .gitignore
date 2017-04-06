@@ -1,2 +1,3 @@
 docker.env
 database.txt
+scans/*.log

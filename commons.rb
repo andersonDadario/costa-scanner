@@ -41,6 +41,7 @@ end
 # SCANNER
 $scanner_send_email = (ENV["SCANNER_SEND_EMAIL"]=="True")
 $scanner_send_webhook = (ENV["SCANNER_SEND_WEBHOOK"]=="True")
+$scanner_save_to_file = (ENV["SCANNER_SAVE_TO_FILE"]=="True")
 
 # GAUNTLET
 $gauntlet_api_user=ENV["GAUNTLET_API_USER"]

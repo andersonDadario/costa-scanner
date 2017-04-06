@@ -41,9 +41,9 @@ def notify_new_server(hosts_ip_addresses)
         }
     end
 
-    if $operations.include?("Webhook")
+    if $operations.include?("SendWebhook")
         operations << {
-            operation: "WebhookOperation",
+            operation: "SendWebhookOperation",
             data: {
                 url: $webhook_url,
                 body: JSON.pretty_generate(hosts_ip_addresses)
@@ -107,7 +107,8 @@ $networks.each do |line|
     database[network_ip_address] ||= {}
 
     network_ip = IPAddress::IPv4.new network_ip_address
-    network_ip.hosts.each do |host_ip|
+    network_hosts = (network_ip.hosts.count==0 ? [network_ip] : network_ip.hosts)
+    network_hosts.each do |host_ip|
         # Is host up?
         host_up = up?(host_ip.address)
 

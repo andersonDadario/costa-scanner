@@ -10,7 +10,7 @@ RUN apt-get update -qq && \
     && mkdir /app
 
 WORKDIR /app
-VOLUME ["/var/lib/redis"]
+VOLUME ["/var/lib/redis","/app/scans"]
 
 # Solve application dependencies
 ADD Gemfile /app/Gemfile
