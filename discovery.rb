@@ -118,7 +118,7 @@ $networks.each do |line|
             has_been_processed = true
         else
             # No, it's a new server!
-            # But we only cound new servers that are running
+            # But we only count servers that are running
             if host_up
                 has_been_processed = true
                 new_servers << host_ip.address

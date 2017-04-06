@@ -6,6 +6,7 @@ Currently 'changes' means that a new server is up. When this server is up, you c
 
 ### Getting Started
 
+- Please [install Docker](https://docs.docker.com/engine/installation/)
 - Run `git clone https://github.com/andersonDadario/costa-scanner.git`
 - Edit `docker.env.original` to configure your preferences
 - Rename `docker.env.original` to `docker.env`
