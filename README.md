@@ -1,8 +1,9 @@
 ### Getting Started
 
-- Run `git clone <repo url>`
+- Run `git clone https://github.com/andersonDadario/costa-scanner.git`
 - Edit `docker.env.original` to configure your preferences
 - Rename `docker.env.original` to `docker.env`
+- Build docker image `docker build -t andersonmvd/costa-scanner .`
 - Run `docker run -d --env-file docker.env --name costa-scanner andersonmvd/costa-scanner`
 - [Optional] To see the logs, run `docker exec -it costa-scanner tail -f app.log`
 
