@@ -1,3 +1,9 @@
+### Introduction
+
+CostaScanner is an application to detect changes in your desired Network Ranges (e.g., 192.168.0.0/24) and take action when such changes are spotted. 
+
+Currently 'changes' means that a new server is up. When this server is up, you can run Nmap and send the result directly to your e-mail or to any URL you want (webhook).
+
 ### Getting Started
 
 - Run `git clone https://github.com/andersonDadario/costa-scanner.git`
