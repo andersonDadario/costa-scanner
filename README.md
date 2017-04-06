@@ -2,7 +2,7 @@
 
 CostaScanner is an application to detect changes in your desired Network Ranges, e.g., 192.168.0.0/24, and take action when such changes are spotted. 
 
-Currently 'changes' means that a new server is up. When this server is up, you can run scanners, e.g., Nmap, and send the result directly to your e-mail or to any URL you want (webhook).
+Currently 'changes' means that a new server is up. When this server is up, you can run scanners, e.g., Nmap, and send the result directly to your e-mail, to any URL you want (webhook) or just save to a file.
 
 CodeScanner aims to be a no-brainer tool to plug into any data center, start monitoring it and take action when necessary.
 
