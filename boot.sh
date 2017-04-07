@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting period discovery infite loop..."
+echo "Starting periodic discovery infite loop..."
 echo "To check logs type:"
 echo "    docker exec -it <container name> tail -f app.log"
 echo "Press [CTRL+C] to stop.."
